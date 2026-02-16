@@ -9,11 +9,9 @@ class Nomina:
     def salario_neto(salario_bruto, retencion):
         return salario_bruto - retencion
 
-
 horas_trabajadas = 48
 valor_hora = 5000
 porcentaje_retencion = 12.5/100
-
 salario_bruto = Nomina.salario_bruto(horas_trabajadas, valor_hora)
 retencion = Nomina.valor_retencion(porcentaje_retencion, salario_bruto)
 salario_neto = Nomina.salario_neto(salario_bruto, retencion)
