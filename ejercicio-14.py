@@ -1,21 +1,15 @@
-class Nomina:
+import math
+class Exponenciales:
 
-    def salario_bruto(horas, valor_hora):
-        return horas * valor_hora
+    def calcular_cuadrado(num):
+        return num **2
 
-    def valor_retencion(porcentaje, salario_bruto):
-        return porcentaje * salario_bruto
+    def calcular_cubo(num):
+        return num **3
 
-    def salario_neto(salario_bruto, retencion):
-        return salario_bruto - retencion
+num =4
+cuadrado = Exponenciales.calcular_cuadrado(num)
+cubo = Exponenciales.calcular_cubo(num)
+print("Cuadrado del numero:", cuadrado)
+print("Cubo del numero:", cubo)
 
-horas_trabajadas = 48
-valor_hora = 5000
-porcentaje_retencion = 12.5/100
-salario_bruto = Nomina.salario_bruto(horas_trabajadas, valor_hora)
-retencion = Nomina.valor_retencion(porcentaje_retencion, salario_bruto)
-salario_neto = Nomina.salario_neto(salario_bruto, retencion)
-
-print("Salario bruto:", salario_bruto)
-print("Retencion:", retencion)
-print("Salario neto:", salario_neto)
